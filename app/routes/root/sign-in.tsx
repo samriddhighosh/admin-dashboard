@@ -4,6 +4,7 @@ import { Link, redirect } from 'react-router'
 import { loginWithGoogle } from '~/appwrite/auth'
 import { account } from '~/appwrite/client';
 
+
 export async function clientLoader() {
     try{
         const user = await account.get();
